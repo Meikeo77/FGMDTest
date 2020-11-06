@@ -9,4 +9,10 @@
 
 @implementation FGMDTableIMP
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.didSelectRowAtIndexPath) {
+        self.didSelectRowAtIndexPath(indexPath);
+    }
+}
+
 @end

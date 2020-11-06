@@ -8,24 +8,54 @@
 #import "FGMDTargetActionViewController.h"
 
 @interface FGMDTargetActionViewController ()
-
+@property (nonatomic, strong) UIView *firstView;
+@property (nonatomic, strong) QMUIButton *firstButton;
 @end
 
 @implementation FGMDTargetActionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"点击测试";
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initSubviews {
+    [super initSubviews];
+    [self.view addSubview:self.firstView];
+    [self.firstView addSubview:self.firstButton];
+    
+    [_firstView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.leading.mas_equalTo(20);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
+    
+    [_firstButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self.firstView);
+        make.size.mas_equalTo(CGSizeMake(50, 40));
+    }];
 }
-*/
+
+- (void)fitstBtnAction {
+    NSLog(@"点击按钮1");
+}
+
+- (UIView *)firstView {
+    if (!_firstView) {
+        _firstView = [UIView new];
+       
+    }
+    return _firstView;
+}
+
+- (QMUIButton *)firstButton {
+    if (!_firstButton) {
+        _firstButton = [QMUIButton buttonWithType:UIButtonTypeCustom];
+        [_firstButton setTitle:@"按钮1" forState:UIControlStateNormal];
+        [_firstButton addTarget:self action:@selector(fitstBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _firstButton;
+}
+
 
 @end

@@ -6,4 +6,6 @@ target 'FGMDTestDemo' do
    pod 'Mixpanel'
    pod 'MJExtension'
    pod 'QMUIKit'
+   pod 'YBHandyList'
+   pod 'Masonry'
 end

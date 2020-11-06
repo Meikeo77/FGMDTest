@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "FGMDHomeListVC.h"
 @interface AppDelegate ()
 
 @end
@@ -15,7 +15,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:UIColorWhite];
+    
+    FGMDHomeListVC *homeVC = [[FGMDHomeListVC alloc]init];
+    QMUINavigationController *naviVC = [[QMUINavigationController alloc]initWithRootViewController:homeVC];
+    [self.window setRootViewController:naviVC];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

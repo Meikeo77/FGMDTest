@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B866B99A243081A6AC32E46F /* libPods-FGMDTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6ED2547D2B2F1451F95C9E /* libPods-FGMDTestDemo.a */; };
+		F5A6A7382554F64200A87FA1 /* FGMDHomeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */; };
+		F5A6A7672555220800A87FA1 /* FGMDTableIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */; };
+		F5A6A76E2555319600A87FA1 /* UIControl+collectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A76D2555319600A87FA1 /* UIControl+collectEvent.m */; };
+		F5A6A7772555416600A87FA1 /* FGMDTargetActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7762555416600A87FA1 /* FGMDTargetActionViewController.m */; };
+		F5A6A77D2555551C00A87FA1 /* UIViewController+FGMD.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A77C2555551C00A87FA1 /* UIViewController+FGMD.m */; };
+		F5A6A7832555552C00A87FA1 /* UIView+FGMD.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7822555552C00A87FA1 /* UIView+FGMD.m */; };
+		F5A6A78A2555700C00A87FA1 /* FGMDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7892555700C00A87FA1 /* FGMDConfig.m */; };
+		F5A6A7932555736A00A87FA1 /* FGMDHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */; };
 		F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F15B2553E6320059B056 /* AppDelegate.m */; };
 		F5E3F15F2553E6320059B056 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F15E2553E6320059B056 /* SceneDelegate.m */; };
-		F5E3F1622553E6320059B056 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F1612553E6320059B056 /* ViewController.m */; };
 		F5E3F1652553E6320059B056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E3F1632553E6320059B056 /* Main.storyboard */; };
 		F5E3F1672553E6350059B056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E3F1662553E6350059B056 /* Assets.xcassets */; };
 		F5E3F16A2553E6350059B056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E3F1682553E6350059B056 /* LaunchScreen.storyboard */; };
@@ -41,13 +48,28 @@
 		3D6ED2547D2B2F1451F95C9E /* libPods-FGMDTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FGMDTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73085DF4518FD7976F3CA3 /* Pods-FGMDTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGMDTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGMDTestDemo/Pods-FGMDTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DF41F9F0F30E26C38D0A5331 /* Pods-FGMDTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGMDTestDemo.release.xcconfig"; path = "Target Support Files/Pods-FGMDTestDemo/Pods-FGMDTestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDHomeListTableViewCell.h; sourceTree = "<group>"; };
+		F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDHomeListTableViewCell.m; sourceTree = "<group>"; };
+		F5A6A73C2554F7B600A87FA1 /* FGMDDemoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDDemoPrefixHeader.pch; sourceTree = "<group>"; };
+		F5A6A7652555220800A87FA1 /* FGMDTableIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDTableIMP.h; sourceTree = "<group>"; };
+		F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDTableIMP.m; sourceTree = "<group>"; };
+		F5A6A76C2555319600A87FA1 /* UIControl+collectEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+collectEvent.h"; sourceTree = "<group>"; };
+		F5A6A76D2555319600A87FA1 /* UIControl+collectEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+collectEvent.m"; sourceTree = "<group>"; };
+		F5A6A7752555416600A87FA1 /* FGMDTargetActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDTargetActionViewController.h; sourceTree = "<group>"; };
+		F5A6A7762555416600A87FA1 /* FGMDTargetActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDTargetActionViewController.m; sourceTree = "<group>"; };
+		F5A6A77B2555551C00A87FA1 /* UIViewController+FGMD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FGMD.h"; sourceTree = "<group>"; };
+		F5A6A77C2555551C00A87FA1 /* UIViewController+FGMD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FGMD.m"; sourceTree = "<group>"; };
+		F5A6A7812555552C00A87FA1 /* UIView+FGMD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FGMD.h"; sourceTree = "<group>"; };
+		F5A6A7822555552C00A87FA1 /* UIView+FGMD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FGMD.m"; sourceTree = "<group>"; };
+		F5A6A7882555700C00A87FA1 /* FGMDConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDConfig.h; sourceTree = "<group>"; };
+		F5A6A7892555700C00A87FA1 /* FGMDConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDConfig.m; sourceTree = "<group>"; };
+		F5A6A7912555736A00A87FA1 /* FGMDHandleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDHandleView.h; sourceTree = "<group>"; };
+		F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDHandleView.m; sourceTree = "<group>"; };
 		F5E3F1572553E6320059B056 /* FGMDTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGMDTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E3F15A2553E6320059B056 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5E3F15B2553E6320059B056 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5E3F15D2553E6320059B056 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		F5E3F15E2553E6320059B056 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F5E3F1602553E6320059B056 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F5E3F1612553E6320059B056 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5E3F1642553E6320059B056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5E3F1662553E6350059B056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5E3F1692553E6350059B056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +128,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F5A6A76B2555311700A87FA1 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6A76C2555319600A87FA1 /* UIControl+collectEvent.h */,
+				F5A6A76D2555319600A87FA1 /* UIControl+collectEvent.m */,
+				F5A6A77B2555551C00A87FA1 /* UIViewController+FGMD.h */,
+				F5A6A77C2555551C00A87FA1 /* UIViewController+FGMD.m */,
+				F5A6A7812555552C00A87FA1 /* UIView+FGMD.h */,
+				F5A6A7822555552C00A87FA1 /* UIView+FGMD.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		F5A6A78725556FC500A87FA1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6A7882555700C00A87FA1 /* FGMDConfig.h */,
+				F5A6A7892555700C00A87FA1 /* FGMDConfig.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		F5E3F14E2553E6320059B056 = {
 			isa = PBXGroup;
 			children = (
@@ -131,18 +175,19 @@
 		F5E3F1592553E6320059B056 /* FGMDTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6A78725556FC500A87FA1 /* Tools */,
+				F5A6A76B2555311700A87FA1 /* category */,
 				F5E3F19B2553F2D60059B056 /* Home */,
 				F5E3F15A2553E6320059B056 /* AppDelegate.h */,
 				F5E3F15B2553E6320059B056 /* AppDelegate.m */,
 				F5E3F15D2553E6320059B056 /* SceneDelegate.h */,
 				F5E3F15E2553E6320059B056 /* SceneDelegate.m */,
-				F5E3F1602553E6320059B056 /* ViewController.h */,
-				F5E3F1612553E6320059B056 /* ViewController.m */,
 				F5E3F1632553E6320059B056 /* Main.storyboard */,
 				F5E3F1662553E6350059B056 /* Assets.xcassets */,
 				F5E3F1682553E6350059B056 /* LaunchScreen.storyboard */,
 				F5E3F16B2553E6350059B056 /* Info.plist */,
 				F5E3F16C2553E6350059B056 /* main.m */,
+				F5A6A73C2554F7B600A87FA1 /* FGMDDemoPrefixHeader.pch */,
 			);
 			path = FGMDTestDemo;
 			sourceTree = "<group>";
@@ -168,8 +213,16 @@
 		F5E3F19B2553F2D60059B056 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */,
+				F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */,
 				F5E3F1A42553F6F80059B056 /* FGMDHomeListVC.h */,
 				F5E3F1A52553F6F80059B056 /* FGMDHomeListVC.m */,
+				F5A6A7652555220800A87FA1 /* FGMDTableIMP.h */,
+				F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */,
+				F5A6A7752555416600A87FA1 /* FGMDTargetActionViewController.h */,
+				F5A6A7762555416600A87FA1 /* FGMDTargetActionViewController.m */,
+				F5A6A7912555736A00A87FA1 /* FGMDHandleView.h */,
+				F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -347,11 +400,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5E3F1622553E6320059B056 /* ViewController.m in Sources */,
 				F5E3F1A62553F6F80059B056 /* FGMDHomeListVC.m in Sources */,
 				F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */,
+				F5A6A7772555416600A87FA1 /* FGMDTargetActionViewController.m in Sources */,
 				F5E3F16D2553E6350059B056 /* main.m in Sources */,
+				F5A6A7672555220800A87FA1 /* FGMDTableIMP.m in Sources */,
+				F5A6A78A2555700C00A87FA1 /* FGMDConfig.m in Sources */,
+				F5A6A7382554F64200A87FA1 /* FGMDHomeListTableViewCell.m in Sources */,
 				F5E3F15F2553E6320059B056 /* SceneDelegate.m in Sources */,
+				F5A6A7932555736A00A87FA1 /* FGMDHandleView.m in Sources */,
+				F5A6A76E2555319600A87FA1 /* UIControl+collectEvent.m in Sources */,
+				F5A6A7832555552C00A87FA1 /* UIView+FGMD.m in Sources */,
+				F5A6A77D2555551C00A87FA1 /* UIViewController+FGMD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +585,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DY9P84KR3B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FGMDTestDemo/FGMDDemoPrefixHeader.pch";
 				INFOPLIST_FILE = FGMDTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -544,6 +607,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DY9P84KR3B;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FGMDTestDemo/FGMDDemoPrefixHeader.pch";
 				INFOPLIST_FILE = FGMDTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

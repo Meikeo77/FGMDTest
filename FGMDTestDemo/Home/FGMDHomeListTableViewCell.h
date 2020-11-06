@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FGMDHomeListTableViewCell : UITableViewCell
+@interface FGMDHomeListTableCellConfig : YBHTableCellConfig
+@property (nonatomic, copy) NSString *cellTitle;
+@end
+
+@interface FGMDHomeListTableViewCell : QMUITableViewCell
 
 @end
 

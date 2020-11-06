@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FGMDTableIMP : YBHandyTableIMP
+@property (nonatomic, copy) void(^didSelectRowAtIndexPath)(NSIndexPath *indexPath);
 
 @end
 

@@ -1,4 +1,5 @@
 PODS:
+  - Masonry (1.1.0)
   - Mixpanel (3.6.3)
   - MJExtension (3.2.2)
   - QMUIKit (4.2.1):
@@ -318,23 +319,30 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.2.1)
   - QMUIKit/QMUIWeakObjectContainer (4.2.1)
+  - YBHandyList (1.0.5)
 
 DEPENDENCIES:
+  - Masonry
   - Mixpanel
   - MJExtension
   - QMUIKit
+  - YBHandyList
 
 SPEC REPOS:
   trunk:
+    - Masonry
     - Mixpanel
     - MJExtension
     - QMUIKit
+    - YBHandyList
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Mixpanel: 0e9d50ecc6398e1082e690ddedf6968e57e81935
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   QMUIKit: 15294d6a350466e4a6f4df0333eac5bff474f995
+  YBHandyList: bf0bf2803bb35569863fe63fd25f4541a4e5fe68
 
-PODFILE CHECKSUM: de859232b2439e3a3add88d94db6301fde2d7ade
+PODFILE CHECKSUM: 0c80678ebbf1ebc5b21cfe388bada1d5ba7dd276
 
 COCOAPODS: 1.9.3
