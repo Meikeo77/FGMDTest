@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"可视化埋点测试";
+    
+    //添加可视化埋点界面
+    [[FGMDConfig defaultConfig] addHandleView];
+    [FGMDConfig defaultConfig].circleOpen = YES;
 }
 
 - (void)initSubviews {

@@ -10,7 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIControl (collectEvent)
-
 @end
 
 NS_ASSUME_NONNULL_END

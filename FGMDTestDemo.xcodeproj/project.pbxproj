@@ -16,6 +16,8 @@
 		F5A6A7832555552C00A87FA1 /* UIView+FGMD.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7822555552C00A87FA1 /* UIView+FGMD.m */; };
 		F5A6A78A2555700C00A87FA1 /* FGMDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7892555700C00A87FA1 /* FGMDConfig.m */; };
 		F5A6A7932555736A00A87FA1 /* FGMDHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */; };
+		F5A6A7992556969000A87FA1 /* UIScrollView+collectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7982556969000A87FA1 /* UIScrollView+collectEvent.m */; };
+		F5A6A7A525569DA700A87FA1 /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7A425569DA700A87FA1 /* NSObject+runtime.m */; };
 		F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F15B2553E6320059B056 /* AppDelegate.m */; };
 		F5E3F15F2553E6320059B056 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F15E2553E6320059B056 /* SceneDelegate.m */; };
 		F5E3F1652553E6320059B056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E3F1632553E6320059B056 /* Main.storyboard */; };
@@ -65,6 +67,10 @@
 		F5A6A7892555700C00A87FA1 /* FGMDConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDConfig.m; sourceTree = "<group>"; };
 		F5A6A7912555736A00A87FA1 /* FGMDHandleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDHandleView.h; sourceTree = "<group>"; };
 		F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDHandleView.m; sourceTree = "<group>"; };
+		F5A6A7972556969000A87FA1 /* UIScrollView+collectEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+collectEvent.h"; sourceTree = "<group>"; };
+		F5A6A7982556969000A87FA1 /* UIScrollView+collectEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+collectEvent.m"; sourceTree = "<group>"; };
+		F5A6A7A325569DA700A87FA1 /* NSObject+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		F5A6A7A425569DA700A87FA1 /* NSObject+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 		F5E3F1572553E6320059B056 /* FGMDTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGMDTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E3F15A2553E6320059B056 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5E3F15B2553E6320059B056 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,10 +139,14 @@
 			children = (
 				F5A6A76C2555319600A87FA1 /* UIControl+collectEvent.h */,
 				F5A6A76D2555319600A87FA1 /* UIControl+collectEvent.m */,
+				F5A6A7972556969000A87FA1 /* UIScrollView+collectEvent.h */,
+				F5A6A7982556969000A87FA1 /* UIScrollView+collectEvent.m */,
 				F5A6A77B2555551C00A87FA1 /* UIViewController+FGMD.h */,
 				F5A6A77C2555551C00A87FA1 /* UIViewController+FGMD.m */,
 				F5A6A7812555552C00A87FA1 /* UIView+FGMD.h */,
 				F5A6A7822555552C00A87FA1 /* UIView+FGMD.m */,
+				F5A6A7A325569DA700A87FA1 /* NSObject+runtime.h */,
+				F5A6A7A425569DA700A87FA1 /* NSObject+runtime.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -403,6 +413,8 @@
 				F5E3F1A62553F6F80059B056 /* FGMDHomeListVC.m in Sources */,
 				F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */,
 				F5A6A7772555416600A87FA1 /* FGMDTargetActionViewController.m in Sources */,
+				F5A6A7992556969000A87FA1 /* UIScrollView+collectEvent.m in Sources */,
+				F5A6A7A525569DA700A87FA1 /* NSObject+runtime.m in Sources */,
 				F5E3F16D2553E6350059B056 /* main.m in Sources */,
 				F5A6A7672555220800A87FA1 /* FGMDTableIMP.m in Sources */,
 				F5A6A78A2555700C00A87FA1 /* FGMDConfig.m in Sources */,

@@ -6,7 +6,7 @@
 //
 
 #import "UIView+FGMD.h"
-
+#import "FGMDHandleView.h"
 @interface UIView ()
 @property (nonatomic, strong) CALayer *metricsBorderLayer;
 @end
@@ -22,14 +22,16 @@
 
 - (void)fgmd_layoutSubviews {
     [self fgmd_layoutSubviews];
-    [self fgmd_metricsRecursiveEnable:[FGMDConfig defaultConfig].circling];
+    if ([FGMDConfig defaultConfig].circleOpen) {
+        [self fgmd_metricsRecursiveEnable:[FGMDConfig defaultConfig].circling];
+    }
 }
 
 ///描边
 - (void)fgmd_metricsRecursiveEnable:(BOOL)enable {
     //去除状态栏
     UIWindow *statusBar = [[UIApplication sharedApplication] valueForKey:@"_statusBarWindow"];
-    if (statusBar) {
+    if (statusBar && [self isDescendantOfView:statusBar]) {
         return;
     }
     
@@ -53,17 +55,8 @@
 }
 
 
-- (void)fg_swizzlingMethod:(SEL)originMethod toMethod:(SEL)targetMethod {
-    Class class = [self class];
-    Method origin = class_getInstanceMethod(class, originMethod);
-    Method target = class_getInstanceMethod(class, targetMethod);
-    
-    method_exchangeImplementations(origin, target);
-}
-
-
 - (void)setMetricsBorderLayer:(CALayer *)metricsBorderLayer {
-    objc_setAssociatedObject(self, @selector(metricsBorderLayer), metricsBorderLayer, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(metricsBorderLayer), metricsBorderLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (CALayer *)metricsBorderLayer {
