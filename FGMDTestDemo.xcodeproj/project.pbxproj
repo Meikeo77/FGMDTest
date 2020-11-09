@@ -18,6 +18,8 @@
 		F5A6A7932555736A00A87FA1 /* FGMDHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */; };
 		F5A6A7992556969000A87FA1 /* UIScrollView+collectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7982556969000A87FA1 /* UIScrollView+collectEvent.m */; };
 		F5A6A7A525569DA700A87FA1 /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7A425569DA700A87FA1 /* NSObject+runtime.m */; };
+		F5A6A7B12559273700A87FA1 /* FGMDCircleParameterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7B02559273700A87FA1 /* FGMDCircleParameterView.m */; };
+		F5A6A7B8255932B000A87FA1 /* FGMDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7B7255932B000A87FA1 /* FGMDModel.m */; };
 		F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F15B2553E6320059B056 /* AppDelegate.m */; };
 		F5E3F15F2553E6320059B056 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E3F15E2553E6320059B056 /* SceneDelegate.m */; };
 		F5E3F1652553E6320059B056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E3F1632553E6320059B056 /* Main.storyboard */; };
@@ -71,6 +73,11 @@
 		F5A6A7982556969000A87FA1 /* UIScrollView+collectEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+collectEvent.m"; sourceTree = "<group>"; };
 		F5A6A7A325569DA700A87FA1 /* NSObject+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
 		F5A6A7A425569DA700A87FA1 /* NSObject+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
+		F5A6A7A925591BFD00A87FA1 /* FGMDStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDStyle.h; sourceTree = "<group>"; };
+		F5A6A7AF2559273700A87FA1 /* FGMDCircleParameterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDCircleParameterView.h; sourceTree = "<group>"; };
+		F5A6A7B02559273700A87FA1 /* FGMDCircleParameterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDCircleParameterView.m; sourceTree = "<group>"; };
+		F5A6A7B6255932B000A87FA1 /* FGMDModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDModel.h; sourceTree = "<group>"; };
+		F5A6A7B7255932B000A87FA1 /* FGMDModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDModel.m; sourceTree = "<group>"; };
 		F5E3F1572553E6320059B056 /* FGMDTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGMDTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E3F15A2553E6320059B056 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5E3F15B2553E6320059B056 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,8 +163,44 @@
 			children = (
 				F5A6A7882555700C00A87FA1 /* FGMDConfig.h */,
 				F5A6A7892555700C00A87FA1 /* FGMDConfig.m */,
+				F5A6A7A925591BFD00A87FA1 /* FGMDStyle.h */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		F5A6A7AA25591C9400A87FA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5E3F1A42553F6F80059B056 /* FGMDHomeListVC.h */,
+				F5E3F1A52553F6F80059B056 /* FGMDHomeListVC.m */,
+				F5A6A7752555416600A87FA1 /* FGMDTargetActionViewController.h */,
+				F5A6A7762555416600A87FA1 /* FGMDTargetActionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5A6A7AB25591CB100A87FA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */,
+				F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */,
+				F5A6A7652555220800A87FA1 /* FGMDTableIMP.h */,
+				F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */,
+				F5A6A7912555736A00A87FA1 /* FGMDHandleView.h */,
+				F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */,
+				F5A6A7AF2559273700A87FA1 /* FGMDCircleParameterView.h */,
+				F5A6A7B02559273700A87FA1 /* FGMDCircleParameterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5A6A7B52559329C00A87FA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6A7B6255932B000A87FA1 /* FGMDModel.h */,
+				F5A6A7B7255932B000A87FA1 /* FGMDModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F5E3F14E2553E6320059B056 = {
@@ -223,16 +266,9 @@
 		F5E3F19B2553F2D60059B056 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */,
-				F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */,
-				F5E3F1A42553F6F80059B056 /* FGMDHomeListVC.h */,
-				F5E3F1A52553F6F80059B056 /* FGMDHomeListVC.m */,
-				F5A6A7652555220800A87FA1 /* FGMDTableIMP.h */,
-				F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */,
-				F5A6A7752555416600A87FA1 /* FGMDTargetActionViewController.h */,
-				F5A6A7762555416600A87FA1 /* FGMDTargetActionViewController.m */,
-				F5A6A7912555736A00A87FA1 /* FGMDHandleView.h */,
-				F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */,
+				F5A6A7B52559329C00A87FA1 /* Model */,
+				F5A6A7AB25591CB100A87FA1 /* View */,
+				F5A6A7AA25591C9400A87FA1 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -415,7 +451,9 @@
 				F5A6A7772555416600A87FA1 /* FGMDTargetActionViewController.m in Sources */,
 				F5A6A7992556969000A87FA1 /* UIScrollView+collectEvent.m in Sources */,
 				F5A6A7A525569DA700A87FA1 /* NSObject+runtime.m in Sources */,
+				F5A6A7B8255932B000A87FA1 /* FGMDModel.m in Sources */,
 				F5E3F16D2553E6350059B056 /* main.m in Sources */,
+				F5A6A7B12559273700A87FA1 /* FGMDCircleParameterView.m in Sources */,
 				F5A6A7672555220800A87FA1 /* FGMDTableIMP.m in Sources */,
 				F5A6A78A2555700C00A87FA1 /* FGMDConfig.m in Sources */,
 				F5A6A7382554F64200A87FA1 /* FGMDHomeListTableViewCell.m in Sources */,

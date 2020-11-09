@@ -7,6 +7,7 @@
 
 #import "UIView+FGMD.h"
 #import "FGMDHandleView.h"
+#import "FGMDCircleParameterView.h"
 @interface UIView ()
 @property (nonatomic, strong) CALayer *metricsBorderLayer;
 @end
@@ -32,6 +33,15 @@
     //去除状态栏
     UIWindow *statusBar = [[UIApplication sharedApplication] valueForKey:@"_statusBarWindow"];
     if (statusBar && [self isDescendantOfView:statusBar]) {
+        return;
+    }
+    
+    //去除埋点操作栏
+    if ([self isSuperviewFromView:FGMDHandleView.class]) {
+        return;
+    }
+    
+    if ([self isSuperviewFromView:FGMDCircleParameterView.class]) {
         return;
     }
     
@@ -61,6 +71,19 @@
 
 - (CALayer *)metricsBorderLayer {
     return objc_getAssociatedObject(self, _cmd);
+}
+
+/// 追寻视图的类型
+- (BOOL)isSuperviewFromView:(Class)viewClass {
+    UIView *fSuperView = self.superview;
+    while (fSuperView) {
+        if ([fSuperView isKindOfClass:viewClass]) {
+            return YES;
+        }else {
+            fSuperView = fSuperView.superview;
+        }
+    }
+    return NO;
 }
 
 @end

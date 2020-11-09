@@ -20,7 +20,7 @@
 - (void)fgmd_setDelegate:(id<UIScrollViewDelegate>)delegate {
     if ([NSStringFromClass([self class]) isEqualToString:@"UITableView"]){
         if (![self isContainSel:GET_CLASS_CUSTOM_SEL(@selector(tableView:didSelectRowAtIndexPath:),[delegate class]) inClass:[delegate class]]) {
-            [(UITableView *)self swizzling_tableViewDidSelectRowAtIndexPathInClass:delegate];
+//            [(UITableView *)self swizzling_tableViewDidSelectRowAtIndexPathInClass:delegate];
         }
     }
     [self fgmd_setDelegate:delegate];

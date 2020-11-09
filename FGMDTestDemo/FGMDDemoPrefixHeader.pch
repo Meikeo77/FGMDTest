@@ -11,10 +11,13 @@
 #import "QMUIKit.h"
 #import "YBHandyList.h"
 #import "Masonry.h"
+
 #import "UIControl+collectEvent.h"
 #import "UIView+FGMD.h"
+#import "NSObject+runtime.h"
+
 #import "FGMDConfig.h"
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "FGMDStyle.h"
+#import "FGMDModel.h"
 
 #endif /* FGMDDemoPrefixHeader_pch */

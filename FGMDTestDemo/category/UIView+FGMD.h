@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (FGMD)
-
+/// 追寻视图的类型
+- (BOOL)isSuperviewFromView:(Class)viewClass;
 @end
 
 NS_ASSUME_NONNULL_END

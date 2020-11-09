@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIColor *)fgmd_randomColor;
 
 - (void)addHandleView;
+
+- (void)showCircleParamView;
+
+- (void)hideCircleParamView;
 @end
 
 NS_ASSUME_NONNULL_END

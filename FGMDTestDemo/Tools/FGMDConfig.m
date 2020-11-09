@@ -7,8 +7,11 @@
 
 #import "FGMDConfig.h"
 #import "FGMDHandleView.h"
-@interface FGMDConfig ()
+#import "FGMDCircleParameterView.h"
 
+@interface FGMDConfig ()
+@property (nonatomic, strong) FGMDCircleParameterView *parameView;
+@property (nonatomic, strong) NSMutableArray<NSDictionary *> *configsArray;   //埋点配置列表
 @end
 
 @implementation FGMDConfig
@@ -18,6 +21,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [FGMDConfig new];
+        instance.configsArray = [NSMutableArray array];
     });
     return instance;
 }
@@ -32,8 +36,25 @@
 }
 
 - (void)addHandleView {
-    FGMDHandleView *handleView = [[FGMDHandleView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 100, 34, 80, 60)];
+    FGMDHandleView *handleView = [[FGMDHandleView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 130, 34, 120, 40)];
     [[UIApplication sharedApplication].keyWindow addSubview:handleView];
 }
+
+- (void)showCircleParamView {
+    _parameView = [[FGMDCircleParameterView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-500, SCREEN_WIDTH, 500)];
+    [[UIApplication sharedApplication].keyWindow addSubview:_parameView];
+}
+
+- (void)hideCircleParamView {
+    [_parameView removeFromSuperview];
+    _parameView = nil;
+}
+
+- (NSString *)getIdentifyStringFromClassName:(NSString *)className actionName:(NSString *)actionName targetName:(NSString *)targetName {
+    /// 唯一标识： class-action-target
+    NSString *string = [NSString stringWithFormat:@"%@-%@-%@",className, actionName,targetName];
+    return string;
+}
+
 
 @end
