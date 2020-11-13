@@ -319,6 +319,12 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.2.1)
   - QMUIKit/QMUIWeakObjectContainer (4.2.1)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
   - YBHandyList (1.0.5)
 
 DEPENDENCIES:
@@ -326,6 +332,7 @@ DEPENDENCIES:
   - Mixpanel
   - MJExtension
   - QMUIKit
+  - WCDB
   - YBHandyList
 
 SPEC REPOS:
@@ -334,6 +341,9 @@ SPEC REPOS:
     - Mixpanel
     - MJExtension
     - QMUIKit
+    - SQLiteRepairKit
+    - WCDB
+    - WCDBOptimizedSQLCipher
     - YBHandyList
 
 SPEC CHECKSUMS:
@@ -341,8 +351,11 @@ SPEC CHECKSUMS:
   Mixpanel: 0e9d50ecc6398e1082e690ddedf6968e57e81935
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   QMUIKit: 15294d6a350466e4a6f4df0333eac5bff474f995
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YBHandyList: bf0bf2803bb35569863fe63fd25f4541a4e5fe68
 
-PODFILE CHECKSUM: 0c80678ebbf1ebc5b21cfe388bada1d5ba7dd276
+PODFILE CHECKSUM: 082f141a4872cadf215017ada2b4dc56602d235a
 
 COCOAPODS: 1.9.3

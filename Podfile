@@ -8,4 +8,6 @@ target 'FGMDTestDemo' do
    pod 'QMUIKit'
    pod 'YBHandyList'
    pod 'Masonry'
+   ## 数据库
+   pod 'WCDB'
 end

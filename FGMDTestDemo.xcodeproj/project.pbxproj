@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B866B99A243081A6AC32E46F /* libPods-FGMDTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6ED2547D2B2F1451F95C9E /* libPods-FGMDTestDemo.a */; };
+		F557D086255BC49400A063BA /* UIButton+FGMD.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D085255BC49400A063BA /* UIButton+FGMD.m */; };
+		F557D08C255BD49900A063BA /* FGMDInfoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D08B255BD49900A063BA /* FGMDInfoListViewController.m */; };
+		F557D093255BD63F00A063BA /* FGMDInfoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D092255BD63F00A063BA /* FGMDInfoListTableViewCell.m */; };
+		F557D09C255BE81900A063BA /* UIGestureRecognizer+collectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D09B255BE81900A063BA /* UIGestureRecognizer+collectEvent.m */; };
+		F557D0A2255BEE6700A063BA /* UIApplication+collectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D0A1255BEE6700A063BA /* UIApplication+collectEvent.m */; };
 		F5A6A7382554F64200A87FA1 /* FGMDHomeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */; };
 		F5A6A7672555220800A87FA1 /* FGMDTableIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */; };
 		F5A6A76E2555319600A87FA1 /* UIControl+collectEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A6A76D2555319600A87FA1 /* UIControl+collectEvent.m */; };
@@ -52,6 +57,16 @@
 		3D6ED2547D2B2F1451F95C9E /* libPods-FGMDTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FGMDTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73085DF4518FD7976F3CA3 /* Pods-FGMDTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGMDTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGMDTestDemo/Pods-FGMDTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DF41F9F0F30E26C38D0A5331 /* Pods-FGMDTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGMDTestDemo.release.xcconfig"; path = "Target Support Files/Pods-FGMDTestDemo/Pods-FGMDTestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F557D084255BC49400A063BA /* UIButton+FGMD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FGMD.h"; sourceTree = "<group>"; };
+		F557D085255BC49400A063BA /* UIButton+FGMD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FGMD.m"; sourceTree = "<group>"; };
+		F557D08A255BD49900A063BA /* FGMDInfoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDInfoListViewController.h; sourceTree = "<group>"; };
+		F557D08B255BD49900A063BA /* FGMDInfoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDInfoListViewController.m; sourceTree = "<group>"; };
+		F557D091255BD63F00A063BA /* FGMDInfoListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDInfoListTableViewCell.h; sourceTree = "<group>"; };
+		F557D092255BD63F00A063BA /* FGMDInfoListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDInfoListTableViewCell.m; sourceTree = "<group>"; };
+		F557D09A255BE81900A063BA /* UIGestureRecognizer+collectEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+collectEvent.h"; sourceTree = "<group>"; };
+		F557D09B255BE81900A063BA /* UIGestureRecognizer+collectEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+collectEvent.m"; sourceTree = "<group>"; };
+		F557D0A0255BEE6700A063BA /* UIApplication+collectEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+collectEvent.h"; sourceTree = "<group>"; };
+		F557D0A1255BEE6700A063BA /* UIApplication+collectEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+collectEvent.m"; sourceTree = "<group>"; };
 		F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDHomeListTableViewCell.h; sourceTree = "<group>"; };
 		F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDHomeListTableViewCell.m; sourceTree = "<group>"; };
 		F5A6A73C2554F7B600A87FA1 /* FGMDDemoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDDemoPrefixHeader.pch; sourceTree = "<group>"; };
@@ -141,6 +156,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F557D090255BD61C00A063BA /* Cell&Config */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */,
+				F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */,
+				F557D091255BD63F00A063BA /* FGMDInfoListTableViewCell.h */,
+				F557D092255BD63F00A063BA /* FGMDInfoListTableViewCell.m */,
+			);
+			path = "Cell&Config";
+			sourceTree = "<group>";
+		};
 		F5A6A76B2555311700A87FA1 /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +180,12 @@
 				F5A6A7822555552C00A87FA1 /* UIView+FGMD.m */,
 				F5A6A7A325569DA700A87FA1 /* NSObject+runtime.h */,
 				F5A6A7A425569DA700A87FA1 /* NSObject+runtime.m */,
+				F557D084255BC49400A063BA /* UIButton+FGMD.h */,
+				F557D085255BC49400A063BA /* UIButton+FGMD.m */,
+				F557D09A255BE81900A063BA /* UIGestureRecognizer+collectEvent.h */,
+				F557D09B255BE81900A063BA /* UIGestureRecognizer+collectEvent.m */,
+				F557D0A0255BEE6700A063BA /* UIApplication+collectEvent.h */,
+				F557D0A1255BEE6700A063BA /* UIApplication+collectEvent.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -175,6 +207,8 @@
 				F5E3F1A52553F6F80059B056 /* FGMDHomeListVC.m */,
 				F5A6A7752555416600A87FA1 /* FGMDTargetActionViewController.h */,
 				F5A6A7762555416600A87FA1 /* FGMDTargetActionViewController.m */,
+				F557D08A255BD49900A063BA /* FGMDInfoListViewController.h */,
+				F557D08B255BD49900A063BA /* FGMDInfoListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,8 +216,7 @@
 		F5A6A7AB25591CB100A87FA1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F5A6A7362554F64200A87FA1 /* FGMDHomeListTableViewCell.h */,
-				F5A6A7372554F64200A87FA1 /* FGMDHomeListTableViewCell.m */,
+				F557D090255BD61C00A063BA /* Cell&Config */,
 				F5A6A7652555220800A87FA1 /* FGMDTableIMP.h */,
 				F5A6A7662555220800A87FA1 /* FGMDTableIMP.m */,
 				F5A6A7912555736A00A87FA1 /* FGMDHandleView.h */,
@@ -446,11 +479,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F557D08C255BD49900A063BA /* FGMDInfoListViewController.m in Sources */,
 				F5E3F1A62553F6F80059B056 /* FGMDHomeListVC.m in Sources */,
 				F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */,
 				F5A6A7772555416600A87FA1 /* FGMDTargetActionViewController.m in Sources */,
+				F557D086255BC49400A063BA /* UIButton+FGMD.m in Sources */,
 				F5A6A7992556969000A87FA1 /* UIScrollView+collectEvent.m in Sources */,
 				F5A6A7A525569DA700A87FA1 /* NSObject+runtime.m in Sources */,
+				F557D0A2255BEE6700A063BA /* UIApplication+collectEvent.m in Sources */,
 				F5A6A7B8255932B000A87FA1 /* FGMDModel.m in Sources */,
 				F5E3F16D2553E6350059B056 /* main.m in Sources */,
 				F5A6A7B12559273700A87FA1 /* FGMDCircleParameterView.m in Sources */,
@@ -458,8 +494,10 @@
 				F5A6A78A2555700C00A87FA1 /* FGMDConfig.m in Sources */,
 				F5A6A7382554F64200A87FA1 /* FGMDHomeListTableViewCell.m in Sources */,
 				F5E3F15F2553E6320059B056 /* SceneDelegate.m in Sources */,
+				F557D093255BD63F00A063BA /* FGMDInfoListTableViewCell.m in Sources */,
 				F5A6A7932555736A00A87FA1 /* FGMDHandleView.m in Sources */,
 				F5A6A76E2555319600A87FA1 /* UIControl+collectEvent.m in Sources */,
+				F557D09C255BE81900A063BA /* UIGestureRecognizer+collectEvent.m in Sources */,
 				F5A6A7832555552C00A87FA1 /* UIView+FGMD.m in Sources */,
 				F5A6A77D2555551C00A87FA1 /* UIViewController+FGMD.m in Sources */,
 			);

@@ -6,6 +6,7 @@
 //
 
 #import "FGMDHandleView.h"
+#import "FGMDInfoListViewController.h"
 
 @interface FGMDHandleView ()
 @property (nonatomic, strong) UISegmentedControl *segmentControl;
@@ -39,6 +40,10 @@
             [[UIApplication sharedApplication].keyWindow layoutSubviews];
             break;
         case 2:
+            // 查看埋点记录
+            [FGMDConfig defaultConfig].circling = NO;
+            [[UIApplication sharedApplication].keyWindow layoutSubviews];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"showMDList" object:nil];
             break;
         default:
             break;

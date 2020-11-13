@@ -21,6 +21,7 @@
     });
 }
 
+
 - (void)fgmd_layoutSubviews {
     [self fgmd_layoutSubviews];
     if ([FGMDConfig defaultConfig].circleOpen) {
@@ -86,4 +87,8 @@
     return NO;
 }
 
+
+- (NSString *)elementContent {
+    return nil;
+}
 @end

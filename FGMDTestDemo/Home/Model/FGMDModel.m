@@ -11,6 +11,10 @@
 
 @end
 
-@implementation FGMDCircleParameterModel
+@implementation FGMDCircleConfigModel
+
+@end
+
+@implementation FGMDInfoModel
 
 @end
