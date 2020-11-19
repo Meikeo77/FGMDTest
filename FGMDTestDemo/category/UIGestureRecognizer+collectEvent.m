@@ -9,9 +9,6 @@
 
 @implementation UITapGestureRecognizer (collectEvent)
 
-- (instancetype)initWithTarget:(id)target action:(SEL)action {
-    
-}
 
 
 @end

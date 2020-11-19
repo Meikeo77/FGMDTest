@@ -319,6 +319,9 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.2.1)
   - QMUIKit/QMUIWeakObjectContainer (4.2.1)
+  - SensorsAnalyticsSDK/Core (2.1.15)
+  - SensorsAnalyticsSDK/DISABLE_UIWEBVIEW (2.1.15):
+    - SensorsAnalyticsSDK/Core
   - SQLiteRepairKit (1.2.2):
     - WCDBOptimizedSQLCipher (~> 1.2.0)
   - WCDB (1.0.7.5):
@@ -332,6 +335,7 @@ DEPENDENCIES:
   - Mixpanel
   - MJExtension
   - QMUIKit
+  - SensorsAnalyticsSDK/DISABLE_UIWEBVIEW
   - WCDB
   - YBHandyList
 
@@ -341,6 +345,7 @@ SPEC REPOS:
     - Mixpanel
     - MJExtension
     - QMUIKit
+    - SensorsAnalyticsSDK
     - SQLiteRepairKit
     - WCDB
     - WCDBOptimizedSQLCipher
@@ -351,11 +356,12 @@ SPEC CHECKSUMS:
   Mixpanel: 0e9d50ecc6398e1082e690ddedf6968e57e81935
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   QMUIKit: 15294d6a350466e4a6f4df0333eac5bff474f995
+  SensorsAnalyticsSDK: 6db41f510b14f6b8a221d07aa53fd673043b106b
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YBHandyList: bf0bf2803bb35569863fe63fd25f4541a4e5fe68
 
-PODFILE CHECKSUM: 082f141a4872cadf215017ada2b4dc56602d235a
+PODFILE CHECKSUM: 0bf0eca7bb5412c1097f42ba99d755cb8444ba23
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.1

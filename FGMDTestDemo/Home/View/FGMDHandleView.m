@@ -33,11 +33,14 @@
     switch (self.segmentControl.selectedSegmentIndex) {
         case 0:
             [FGMDConfig defaultConfig].circling = NO;
+            [[FGMDConfig defaultConfig] hideCheckView];
             [[UIApplication sharedApplication].keyWindow layoutSubviews];
             break;
         case 1:
             [FGMDConfig defaultConfig].circling = YES;
             [[UIApplication sharedApplication].keyWindow layoutSubviews];
+            //展示选择控件
+            [[FGMDConfig defaultConfig] showCheckView];
             break;
         case 2:
             // 查看埋点记录

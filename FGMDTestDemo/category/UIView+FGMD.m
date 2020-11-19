@@ -17,7 +17,7 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [[self class] fg_swizzlingMethod:@selector(layoutSubviews) toMethod:@selector(fgmd_layoutSubviews)];
+//        [[self class] fg_swizzlingMethod:@selector(layoutSubviews) toMethod:@selector(fgmd_layoutSubviews)];
     });
 }
 

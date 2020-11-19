@@ -10,4 +10,6 @@ target 'FGMDTestDemo' do
    pod 'Masonry'
    ## 数据库
    pod 'WCDB'
+   pod 'SensorsAnalyticsSDK', :subspecs => ['DISABLE_UIWEBVIEW']
+   
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3878252566D15A00FCE52A /* FGMDCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3878242566D15A00FCE52A /* FGMDCheckView.m */; };
 		B866B99A243081A6AC32E46F /* libPods-FGMDTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6ED2547D2B2F1451F95C9E /* libPods-FGMDTestDemo.a */; };
 		F557D086255BC49400A063BA /* UIButton+FGMD.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D085255BC49400A063BA /* UIButton+FGMD.m */; };
 		F557D08C255BD49900A063BA /* FGMDInfoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F557D08B255BD49900A063BA /* FGMDInfoListViewController.m */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3878232566D15A00FCE52A /* FGMDCheckView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGMDCheckView.h; sourceTree = "<group>"; };
+		0F3878242566D15A00FCE52A /* FGMDCheckView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGMDCheckView.m; sourceTree = "<group>"; };
 		3D6ED2547D2B2F1451F95C9E /* libPods-FGMDTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FGMDTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73085DF4518FD7976F3CA3 /* Pods-FGMDTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGMDTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGMDTestDemo/Pods-FGMDTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DF41F9F0F30E26C38D0A5331 /* Pods-FGMDTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGMDTestDemo.release.xcconfig"; path = "Target Support Files/Pods-FGMDTestDemo/Pods-FGMDTestDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 				F5A6A7922555736A00A87FA1 /* FGMDHandleView.m */,
 				F5A6A7AF2559273700A87FA1 /* FGMDCircleParameterView.h */,
 				F5A6A7B02559273700A87FA1 /* FGMDCircleParameterView.m */,
+				0F3878232566D15A00FCE52A /* FGMDCheckView.h */,
+				0F3878242566D15A00FCE52A /* FGMDCheckView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F557D08C255BD49900A063BA /* FGMDInfoListViewController.m in Sources */,
+				0F3878252566D15A00FCE52A /* FGMDCheckView.m in Sources */,
 				F5E3F1A62553F6F80059B056 /* FGMDHomeListVC.m in Sources */,
 				F5E3F15C2553E6320059B056 /* AppDelegate.m in Sources */,
 				F5A6A7772555416600A87FA1 /* FGMDTargetActionViewController.m in Sources */,

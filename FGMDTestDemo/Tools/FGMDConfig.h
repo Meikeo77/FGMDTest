@@ -44,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 读取全部埋点
 - (NSMutableArray <FGMDInfoModel *> *)readAllMdList;
 
+- (void)showCheckView;
+
+- (void)hideCheckView;
+
 @end
 
 NS_ASSUME_NONNULL_END

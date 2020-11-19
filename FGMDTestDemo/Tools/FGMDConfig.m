@@ -8,11 +8,15 @@
 #import "FGMDConfig.h"
 #import "FGMDHandleView.h"
 #import "FGMDCircleParameterView.h"
+#import "FGMDCheckView.h"
 
 @interface FGMDConfig ()
 @property (nonatomic, strong) FGMDCircleParameterView *parameView;
 @property (nonatomic, strong) NSMutableArray<FGMDCircleConfigModel *> *configArray;  //配置项集合
 @property (nonatomic, strong) NSMutableArray<FGMDInfoModel *> *mdListArray;  //埋点数据集合
+
+@property (nonatomic, strong) FGMDCheckView *viewCheckView;
+
 @end
 
 @implementation FGMDConfig
@@ -106,6 +110,22 @@
 /// 读取全部埋点
 - (NSMutableArray <FGMDInfoModel *> *)readAllMdList {
     return self.mdListArray.mutableCopy;
+}
+
+
+/// 显示checkView
+- (void)showCheckView{
+    if (!_viewCheckView) {
+        _viewCheckView = [[FGMDCheckView alloc] init];
+        _viewCheckView.hidden = YES;
+        UIWindow *delegateWindow = [[UIApplication sharedApplication].delegate window];
+        [delegateWindow addSubview:_viewCheckView];
+    }
+    [_viewCheckView show];
+}
+
+- (void)hideCheckView{
+    [_viewCheckView hide];
 }
 
 
