@@ -51,6 +51,7 @@ static CGFloat const kViewCheckSize = 62;
     CGRect frame = [self.window convertRect:view.bounds fromView:view];
     _viewBound.frame = frame;
     [self.window addSubview:_viewBound];
+    [self.window bringSubviewToFront:self];
     
     // _infoWindow.hidden = NO;
 //    _infoWindow.infoAttributedText = [self viewInfo:view];
