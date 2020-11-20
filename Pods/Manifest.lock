@@ -1,4 +1,5 @@
 PODS:
+  - IQKeyboardManager (6.5.6)
   - Masonry (1.1.0)
   - Mixpanel (3.6.3)
   - MJExtension (3.2.2)
@@ -331,6 +332,7 @@ PODS:
   - YBHandyList (1.0.5)
 
 DEPENDENCIES:
+  - IQKeyboardManager
   - Masonry
   - Mixpanel
   - MJExtension
@@ -341,6 +343,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - IQKeyboardManager
     - Masonry
     - Mixpanel
     - MJExtension
@@ -352,6 +355,7 @@ SPEC REPOS:
     - YBHandyList
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Mixpanel: 0e9d50ecc6398e1082e690ddedf6968e57e81935
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
@@ -362,6 +366,6 @@ SPEC CHECKSUMS:
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YBHandyList: bf0bf2803bb35569863fe63fd25f4541a4e5fe68
 
-PODFILE CHECKSUM: 0bf0eca7bb5412c1097f42ba99d755cb8444ba23
+PODFILE CHECKSUM: 8da9731261c0f373ef80673efa5e905faec47869
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

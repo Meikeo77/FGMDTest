@@ -38,7 +38,7 @@
         FGMDInfoListTableCellConfig *cellConfig = [FGMDInfoListTableCellConfig new];
         cellConfig.cellClass = FGMDInfoListTableViewCell.self;
         cellConfig.event = obj.eventId;
-        cellConfig.content = obj.content;
+        cellConfig.content = [NSString stringWithFormat:@"%@  ----  %@",obj.logType, obj.subLogType];
         cellConfig.time = obj.time;
         
         //倒序 最新的在前面

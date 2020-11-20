@@ -8,8 +8,9 @@ target 'FGMDTestDemo' do
    pod 'QMUIKit'
    pod 'YBHandyList'
    pod 'Masonry'
+   pod 'IQKeyboardManager'
    ## 数据库
-   pod 'WCDB'
+   pod 'WCDB' 
    pod 'SensorsAnalyticsSDK', :subspecs => ['DISABLE_UIWEBVIEW']
    
 end

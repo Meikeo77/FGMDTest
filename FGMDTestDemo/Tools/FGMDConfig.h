@@ -18,24 +18,18 @@ NS_ASSUME_NONNULL_BEGIN
 ///随机颜色
 - (UIColor *)fgmd_randomColor;
 ///圈选控制栏
-- (void)addHandleView;
-
-///圈选操作页面
-- (void)showCircleParamViewWithIdentify:(NSString *)identify;
-- (void)hideCircleParamView;
-
-/// 获取唯一标识
-- (NSString *)getIdentifyStringFromClassName:(NSString *)className actionName:(NSString *)actionName targetName:(NSString *)targetName;
+- (void)showHandleView;
+- (void)updateViewPath:(NSString *)viewPath LogType:(NSString *)logType subLogType:(NSString *)subLogType;
 
 
 /// 插入新的配置项
-- (void)insertConfig:(FGMDCircleConfigModel *)configModel;
+- (void)updataConfig:(FGMDCircleConfigModel *)configModel;
 /// 删除配置
-- (BOOL)deleteConfig:(NSString *)identifier;
+- (BOOL)deleteConfigWithIdentifier:(NSString *)identifier;
 /// 读取全部的配置项
 - (NSArray <FGMDCircleConfigModel *> *)readAllConfigs;
 /// 查找配置项
-- (FGMDCircleConfigModel *)searchForConfig:(NSString *)identifier;
+- (FGMDCircleConfigModel *)searchForConfigWithIdentifier:(NSString *)identifier;
 
 
 

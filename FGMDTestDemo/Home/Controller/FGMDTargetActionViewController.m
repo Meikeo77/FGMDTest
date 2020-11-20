@@ -11,6 +11,7 @@
 @interface FGMDTargetActionViewController ()
 @property (nonatomic, strong) UIView *firstView;
 @property (nonatomic, strong) QMUIButton *firstButton;
+@property (nonatomic, strong) QMUIButton *secondButton;
 @property (nonatomic, strong) UIView *tapView;
 @end
 
@@ -28,6 +29,7 @@
     [super initSubviews];
     [self.view addSubview:self.firstView];
     [self.firstView addSubview:self.firstButton];
+    [self.firstView addSubview:self.secondButton];
     [self.view addSubview:self.tapView];
     
     [_firstView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -37,8 +39,15 @@
     }];
     
     [_firstButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(self.firstView);
+        make.centerY.mas_equalTo(self.firstView);
         make.size.mas_equalTo(CGSizeMake(50, 40));
+        make.leading.mas_equalTo(self.firstView).mas_offset(20);
+    }];
+    
+    [_secondButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(50, 40));
+        make.centerY.mas_equalTo(self.firstView);
+        make.leading.mas_equalTo(_firstButton.mas_trailing).mas_offset(20);
     }];
     
     [_tapView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -51,6 +60,10 @@
 
 - (void)fitstBtnAction {
     NSLog(@"点击按钮1");
+}
+
+- (void)secondBtnAction {
+    NSLog(@"点击按钮2");
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)gesture {
@@ -80,6 +93,18 @@
     }
     return _firstButton;
 }
+
+- (QMUIButton *)secondButton {
+    if (!_secondButton) {
+        _secondButton = [QMUIButton buttonWithType:UIButtonTypeCustom];
+        [_secondButton setTitle:@"按钮2" forState:UIControlStateNormal];
+        [_secondButton setBackgroundColor:UIColorMakeWithHex(@"#257BF4")];
+        [_secondButton setTitleColor:UIColorWhite forState:UIControlStateNormal];
+        [_secondButton addTarget:self action:@selector(secondBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _secondButton;
+}
+
 
 - (UIView *)tapView {
     if (!_tapView) {

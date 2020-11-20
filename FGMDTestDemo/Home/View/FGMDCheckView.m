@@ -6,7 +6,6 @@
 //
 
 #import "FGMDCheckView.h"
-
 static CGFloat const kViewCheckSize = 62;
 
 @interface FGMDCheckView()
@@ -69,6 +68,19 @@ static CGFloat const kViewCheckSize = 62;
     _viewBound.frame = frame;
     // _infoWindow.hidden = NO;
 //    _infoWindow.infoAttributedText = [self viewInfo:view];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.window];
+    self.frame = CGRectMake(point.x-_left, point.y-_top, self.frame.size.width, self.frame.size.height);
+    
+    CGPoint topPoint = [touch locationInView:self.window];
+    UIView *view = [self topView:self.window Point:topPoint];
+    
+    NSString *identifier = [FGMDAutoTrackUtils getViewIdentifierWithObject:view];
+    FGMDCircleConfigModel *configModel = [[FGMDConfig defaultConfig] searchForConfigWithIdentifier:identifier];
+    [[FGMDConfig defaultConfig] updateViewPath:identifier LogType:configModel.logType subLogType:configModel.subLogType];
 }
 
 - (UIView*)topView:(UIView*)view Point:(CGPoint) point{

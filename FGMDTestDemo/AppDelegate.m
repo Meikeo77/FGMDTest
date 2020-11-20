@@ -8,6 +8,8 @@
 #import "AppDelegate.h"
 #import "FGMDHomeListVC.h"
 #import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+
 @interface AppDelegate ()
 
 @end
@@ -25,32 +27,37 @@
     [self.window setRootViewController:naviVC];
     [self.window makeKeyAndVisible];
     
-// 初始化配置
-    SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:@"http://10.10.1.78:8106/sa/sa?project=EbizDemo" launchOptions:launchOptions];
-    // 开启全埋点
-    options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart |
-                                 SensorsAnalyticsEventTypeAppEnd |
-                                 SensorsAnalyticsEventTypeAppClick |
-                                 SensorsAnalyticsEventTypeAppViewScreen;
-#ifdef DEBUG
-    // 开启 Log
-    options.enableLog = YES;
-#endif
-
-    /**
-     * 其他配置，如开启可视化全埋点
-     */
-    options.enableVisualizedAutoTrack = YES;
-    // 初始化 SDK
-    [SensorsAnalyticsSDK startWithConfigOptions:options];
+    //配置需要滚动的tableview表单
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.enableAutoToolbar = YES;
+    
+//    // 初始化配置
+//    SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:@"http://10.10.1.78:8106/sa/sa?project=EbizDemo" launchOptions:launchOptions];
+//    // 开启全埋点
+//    options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart |
+//                                 SensorsAnalyticsEventTypeAppEnd |
+//                                 SensorsAnalyticsEventTypeAppClick |
+//                                 SensorsAnalyticsEventTypeAppViewScreen;
+//#ifdef DEBUG
+//    // 开启 Log
+//    options.enableLog = YES;
+//#endif
+//
+//    /**
+//     * 其他配置，如开启可视化全埋点
+//     */
+//    options.enableVisualizedAutoTrack = YES;
+//    // 初始化 SDK
+//    [SensorsAnalyticsSDK startWithConfigOptions:options];
 
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    if ([[SensorsAnalyticsSDK sharedInstance] handleSchemeUrl:url]) {
-        return YES;
-    }
+//    if ([[SensorsAnalyticsSDK sharedInstance] handleSchemeUrl:url]) {
+//        return YES;
+//    }
     return NO;
 }
 

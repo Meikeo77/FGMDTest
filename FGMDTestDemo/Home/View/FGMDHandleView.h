@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FGMDHandleView : UIView
-
+- (void)updateViewPath:(NSString *)viewPath LogType:(NSString *)logType subLogType:(NSString *)subLogType;
 @end
 
 NS_ASSUME_NONNULL_END

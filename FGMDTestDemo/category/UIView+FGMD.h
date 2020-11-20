@@ -6,12 +6,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FGMDAutoTrackProperty.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (FGMD)
+@interface UIView (FGMD) <FGMDAutoTrackProperty , FGMDAutoTrackViewControllerProperty>
 /// 追寻视图的类型
 - (BOOL)isSuperviewFromView:(Class)viewClass;
+
+// 在 controller 上的成员变量
+- (NSString *)fgmd_controllerVariable;
+
+//视图内容
+- (NSString *)fgmd_text;
 
 @property (nonatomic, copy, readonly) NSString *elementContent;  //元素名称
 @end

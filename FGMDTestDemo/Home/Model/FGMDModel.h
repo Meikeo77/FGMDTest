@@ -16,21 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FGMDCircleConfigModel : NSObject
 ///唯一标识
 @property (nonatomic, copy) NSString *identifier;
-///事件id
-@property (nonatomic, copy) NSString *eventId;
-///附加参数
-@property (nonatomic, copy) NSString *additionalKey;
+@property (nonatomic, copy) NSString *logType;
+@property (nonatomic, copy) NSString *subLogType;
 @end
 
 @interface FGMDInfoModel : NSObject
 /// 事件id
 @property (nonatomic, copy) NSString *eventId;
-/// 埋点内容
-@property (nonatomic, copy) NSString *content;
-/// 时间
+@property (nonatomic, copy) NSString *logType;
+@property (nonatomic, copy) NSString *subLogType;
 @property (nonatomic, copy) NSString *time;
-/// 附加内容
-@property (nonatomic, copy) NSString *addition;
+
 @end
 
 NS_ASSUME_NONNULL_END

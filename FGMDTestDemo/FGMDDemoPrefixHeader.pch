@@ -19,5 +19,7 @@
 #import "FGMDConfig.h"
 #import "FGMDStyle.h"
 #import "FGMDModel.h"
+#import "FGMDAutoTrackUtils.h"
+
 
 #endif /* FGMDDemoPrefixHeader_pch */

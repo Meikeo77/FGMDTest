@@ -7,15 +7,14 @@
 
 #import "FGMDConfig.h"
 #import "FGMDHandleView.h"
-#import "FGMDCircleParameterView.h"
 #import "FGMDCheckView.h"
 
 @interface FGMDConfig ()
-@property (nonatomic, strong) FGMDCircleParameterView *parameView;
 @property (nonatomic, strong) NSMutableArray<FGMDCircleConfigModel *> *configArray;  //配置项集合
 @property (nonatomic, strong) NSMutableArray<FGMDInfoModel *> *mdListArray;  //埋点数据集合
 
 @property (nonatomic, strong) FGMDCheckView *viewCheckView;
+@property (nonatomic, strong) FGMDHandleView *handleView;
 
 @end
 
@@ -41,32 +40,18 @@
     return randColor;
 }
 
-- (void)addHandleView {
-    FGMDHandleView *handleView = [[FGMDHandleView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 130, 34, 120, 40)];
-    [[UIApplication sharedApplication].keyWindow addSubview:handleView];
+- (void)showHandleView {
+    _handleView = [[FGMDHandleView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 230)/2, (SCREEN_HEIGHT - 130)/2, 230, 130)];
+    [[UIApplication sharedApplication].keyWindow addSubview:_handleView];
 }
 
-- (void)showCircleParamViewWithIdentify:(NSString *)identify {
-    _parameView = [[FGMDCircleParameterView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-500, SCREEN_WIDTH, 500)];
-    _parameView.identifyString = identify;
-    [[UIApplication sharedApplication].keyWindow addSubview:_parameView];
+- (void)updateViewPath:(NSString *)viewPath LogType:(NSString *)logType subLogType:(NSString *)subLogType {
+    [_handleView updateViewPath:viewPath LogType:logType subLogType:subLogType];
 }
 
-- (void)hideCircleParamView {
-    [_parameView removeFromSuperview];
-    _parameView = nil;
-}
-
-- (NSString *)getIdentifyStringFromClassName:(NSString *)className actionName:(NSString *)actionName targetName:(NSString *)targetName {
-    /// 唯一标识： class-action-target
-    NSString *string = [NSString stringWithFormat:@"%@-%@-%@",className, actionName,targetName];
-    return string;
-}
-
-
-/// 插入新的配置项
-- (void)insertConfig:(FGMDCircleConfigModel *)configModel {
-    FGMDCircleConfigModel *repeatConfig = [self searchForConfig:configModel.identifier];
+/// 更新配置项
+- (void)updataConfig:(FGMDCircleConfigModel *)configModel {
+    FGMDCircleConfigModel *repeatConfig = [self searchForConfigWithIdentifier:configModel.identifier];
     if (repeatConfig) {
         [self.configArray replaceObjectAtIndex:[self.configArray indexOfObject:repeatConfig] withObject:configModel];
     }else {
@@ -79,8 +64,8 @@
     return self.configArray.mutableCopy;
 }
 
-- (BOOL)deleteConfig:(NSString *)identifier {
-    FGMDCircleConfigModel *repeatConfig = [self searchForConfig:identifier];
+- (BOOL)deleteConfigWithIdentifier:(NSString *)identifier {
+    FGMDCircleConfigModel *repeatConfig = [self searchForConfigWithIdentifier:identifier];
     if (repeatConfig) {
         [self.configArray removeObject:repeatConfig];
         return YES;
@@ -91,7 +76,7 @@
 
 
 /// 查找配置项
-- (FGMDCircleConfigModel *)searchForConfig:(NSString *)identifier {
+- (FGMDCircleConfigModel *)searchForConfigWithIdentifier:(NSString *)identifier {
     FGMDCircleConfigModel *repeatConfig = nil;
     for (FGMDCircleConfigModel *configModel in self.configArray) {
         if ([configModel.identifier isEqualToString:identifier]) {
